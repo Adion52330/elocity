@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f5f6fa;
+}
+
+header{
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+#add{
+    padding: 7px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 200px;
+    position: absolute;
+    transition: background-color 300ms ease;
+}
+
+.fa-plus{
+    padding: 5px;
+    border-radius: 200px;
+    background-color: #f1c40f;
+    margin-right: 3px;
+}
+
+#notes{
+    margin: 100px 20px 20px 20px;
+}
+
+.fa-edit:hover{
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 2px 1px 2px #000;
+}
+.fa-trash-alt:hover{
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 2px 1px 2px #000;
+}
+
+.note{
+    margin: 2px 2px 2px 2px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: royalblue;
+}
+
+.hidden{
+    display: hidden;
+}
+
+.main{
+    padding: 10px; font-size: large;
+    height: 10;
+    width: 30;
+    
+}
+
+@media (max-width: 600px) {
+    .note{
+        column-span: 20;
+    }
+}

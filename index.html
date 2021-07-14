@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>eLocity</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-family: 'Roboto', sans-serif">
+        <i class="fas fa-sticky-note"></i> eLocity
+      </h1>
+      <h5 style="text-align: center; font-family: 'Encode Sans SC', sans-serif">
+        After creating the note Click/Tap anywhere to save
+      </h5>
+    </header>
+    <div
+      id="add"
+      style="
+        font-family: 'Encode Sans SC', sans-serif;
+        display: flex;
+        align-items: center;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+      "
+      onmouseover="col()"
+      onmouseout="uncol()"
+    >
+      <i class="fas fa-plus"></i> <span id="hid">Add Note</span>
+    </div>
+    <section id="notes" style="display: flex; flex-wrap: wrap"></section>
+  </body>
+  <script src="script.js"></script>
+</html>
